@@ -1,3 +1,11 @@
+bubblewrap (0.6.1-1ubuntu0.1) jammy-security; urgency=medium
+
+   * This is expected to be included in 0.10.0, and is necessary to resolve
+     CVE-2024-42472 in Flatpak without introducing a potentially exploitable
+     race condition.
+
+ -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Mon, 23 Sep 2024 12:52:33 -0300
+
 bubblewrap (0.6.1-1) unstable; urgency=medium
 
   * New upstream release

@@ -1,1 +1,2 @@
 debian/Change-EPERM-error-message-to-show-Debian-specific-inform.patch
+Add-bind-fd-and-ro-bind-fd-to-let-you-bind-a-O_PATH-fd.patch
