@@ -1,3 +1,22 @@
+bubblewrap (0.6.1-1ubuntu0.3) jammy-security; urgency=medium
+
+  * SECURITY REGRESSION: Incompatibility with Flatpak (LP: #2167621)
+    - debian: Drop CVE-2026-87766
+
+ -- Kyle Kernick <kyle.kernick@canonical.com>  Thu, 17 Sep 2026 14:13:14 -0600
+
+bubblewrap (0.6.1-1ubuntu0.2) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: Improper link resolution during sandbox setup
+    - debian/patches/CVE-2026-87766-1.patch: Import safe_openat() from crun
+      in chroot_realpath.c, meson.build, safe_openat.c, and utils.h
+    - debian/patches/CVE-2026-87766-2.patch: Create and resolve destinations
+      without following symlinks, and reject mount operations on symlink
+      destinations in bubblewrap.c
+    - CVE-2026-87766
+
+ -- Kyle Kernick <kyle.kernick@canonical.com>  Mon, 14 Sep 2026 12:45:35 -0600
+
 bubblewrap (0.6.1-1ubuntu0.1) jammy-security; urgency=medium
 
    * This is expected to be included in 0.10.0, and is necessary to resolve
